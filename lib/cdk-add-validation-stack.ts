@@ -1,16 +1,15 @@
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-// import * as sqs from 'aws-cdk-lib/aws-sqs';
 
 export class CdkAddValidationStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // The code that defines your stack goes here
+    this.validate();
+    /* 以下リソース作成処理 */
+  }
 
-    // example resource
-    // const queue = new sqs.Queue(this, 'CdkAddValidationQueue', {
-    //   visibilityTimeout: cdk.Duration.seconds(300)
-    // });
+  private validate() {
+    /* 以下バリデート処理 */
   }
 }
