@@ -12,12 +12,8 @@ export class MyValidator implements IValidation {
   public validate(): string[] {
     const errors: string[] = [];
 
-    if (this.scopeType !== "CLOUDFRONT" && this.scopeType !== "REGIONAL") {
-      errors.push("Scope must be CLOUDFRONT or REGIONAL.");
-    }
-    if (this.scopeType === "CLOUDFRONT" && this.region !== "us-east-1") {
-      errors.push("Region must be us-east-1 when CLOUDFRONT.");
-    } 
+    errors.push("Test Error 1.")
+    errors.push("Test Error 2.")
 
     return errors;
   }
