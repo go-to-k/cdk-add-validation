@@ -34,7 +34,7 @@
     "source-map-support": "^0.5.21"
   },
   "volta": {
-    "node": "19.3.0",
+    "node": "18.16.0",
     "yarn": "1.22.17"
   }
 }
